@@ -52,6 +52,10 @@ h2 {
   margin: 30px;
 }
 
+.contato h2 {
+  text-align: left;
+}
+
 .contato input, textarea {
   width: 100%;
   margin: 10px 0;
