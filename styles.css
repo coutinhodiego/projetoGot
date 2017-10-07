@@ -10,21 +10,13 @@ h1 {
   font-size: 40px;
 }
 
-h2 {
-  color: white;
-  font-size: 32px;
-}
-
-p {
-  color: white;
-  font-size: 19px;
-  margin: 30px;
-}
-
-.banner {
-  width: 100%;
+.banner{
+  position: relative;
   margin: auto;
-  display: block;
+}
+
+.banner img{
+  width: 100%;
 }
 
 .houses {
@@ -40,8 +32,87 @@ p {
   width: 50%;
 }
 
+.houses h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.houses p {
+  color: white;
+  font-size: 19px;
+  margin: 30px;
+}
+
 footer {
   color: white;
   margin: 8% 30px;
   text-align: right;
+}
+
+.summary {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+div.tab {
+    overflow: hidden;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: white;
+    font-size: 20px;
+}
+
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+div.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    color: white;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent h3{
+  color: white;
+  font-size: 32px;
+}
+
+.tabcontent p{
+  color: white;
+  font-size: 19px;
+}
+
+
+.cast {
+  width: 80%;
+  margin: auto;
+  display: block;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cast div {
+  width: 33.3%;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.cast p {
+  color: white;
+  font-size: 19px;
+  margin: 2px;
 }

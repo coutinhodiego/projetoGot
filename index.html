@@ -6,16 +6,30 @@
   <title>Game of Thrones</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicongot.ico" />
 </head>
 
 <body>
-  <header>
+  <header class="banner" >
     <!-- <h1>Game of Thrones</h1> -->
-    <img class="banner" src="images/titulo1.jpg">
+    <img src="images/titulo1.jpg">
   </header>
 
-  <!-- <section class="banner">
-    </section> -->
+  <h1>Game of Thrones Seasons</h1>
+  <section class="summary">
+    <div class="tab">
+      <button id="tabSeason1" class="tablinks active" onclick="openSeason(this.id, 'season1')">Season 1</button>
+      <button id="tabSeason2" class="tablinks" onclick="openSeason(this.id, 'season2')">Season 2</button>
+      <button id="tabSeason3" class="tablinks" onclick="openSeason(this.id, 'season3')">Season 3</button>
+      <button id="tabSeason4" class="tablinks" onclick="openSeason(this.id, 'season4')">Season 4</button>
+      <button id="tabSeason5" class="tablinks" onclick="openSeason(this.id, 'season5')">Season 5</button>
+      <button id="tabSeason6" class="tablinks" onclick="openSeason(this.id, 'season6')">Season 6</button>
+      <button id="tabSeason7" class="tablinks" onclick="openSeason(this.id, 'season7')">Season 7</button>
+    </div>
+
+    <div id="season" class="tabcontent"></div>
+
+  </section>
 
   <h1>Houses Of Westeros</h1>
   <section class="houses">
@@ -71,9 +85,68 @@
       </p>
     </div>
   </section>
+
+  <h1>Game of Thrones Cast</h1>
+  <section class="cast">
+    <div>
+      <img class="cast" src="images/daenerys.jpg" alt="">
+      <p>Emilia Clarke</p>
+      <p>Daenerys Targaryen</p>
+    </div>
+
+    <div>
+      <img class="cast" src="images/jon.jpg" alt="">
+      <p>Kit Harington</p>
+      <p>Jon Snow</p>
+    </div>
+
+    <div>
+      <img class="cast" src="images/tyrion.jpg" alt="">
+      <p>Peter Dinklage</p>
+      <p>Tyrion Lannister</p>
+    </div>
+
+    <div>
+      <img class="cast" src="images/jaime.jpeg" alt="">
+      <p>Nikolaj Coster-Waldau</p>
+      <p>Jaime Lannister</p>
+    </div>
+
+    <div>
+      <img class="cast" src="images/cersei.jpg" alt="">
+      <p>Lena Headey</p>
+      <p>Cersei Lannister</p>
+    </div>
+
+    <div>
+      <img class="cast" src="images/sansa.png" alt="">
+      <p>Sophie Turner</p>
+      <p>Sansa Stark</p>
+    </div>
+
+    <div>
+      <img class="cast" src="images/brans.jpg" alt="">
+      <p>Isaac Hempstead-Wright</p>
+      <p>Bran Stark</p>
+    </div>
+
+    <div>
+      <img class="cast" src="images/arya.jpg" alt="">
+      <p>Maisie Williams</p>
+      <p>Arya Stark</p>
+    </div>
+
+    <div>
+      <img class="cast" src="images/brienne.png" alt="">
+      <p>Gwendoline Christie</p>
+      <p>Brienne de Tarth</p>
+    </div>
+  </section>
+
   <footer>
     <p>&copy Projeto feito por fãs - 2017</p>
   </footer>
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
 
 </html>
