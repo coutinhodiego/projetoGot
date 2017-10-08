@@ -146,19 +146,24 @@
     </div>
   </section>
 
+  <h2>Assine o nosso Newsletter</h2>
   <section class="contato">
-    <h2>Entre em contato</h2>
-    <form class="" action="index.html" method="post">
-      <input type="text" placeholder="Nome">
-      <input type="text" placeholder="Email">
-      <textarea rows="8" placeholder="Mensagem"></textarea>
-      <button type="button">Enivar</button>
+    <form name="form1" action="index.html" method="post">
+      <input type="text" placeholder="Nome" name="nome">
+      <input type="text" placeholder="Email" name="email">
+      <textarea rows="8" placeholder="Mensagem" name="mensagem"></textarea>
+      <button type="button" onclick="validaFormulario()">Enivar</button>
     </form>
   </section>
 
   <footer>
     <p>&copy Projeto feito por fãs - 2017</p>
   </footer>
+
+  <div class="modal">
+    <p id="textModal"></p>
+    <button onclick="toggleModal()">OK</button>
+  </div>
 
   <script type="text/javascript" src="scripts.js"></script>
 </body>

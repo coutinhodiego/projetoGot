@@ -26,7 +26,8 @@ function openSeason(id, linha) {
 }
 
 
-let bannerAtual = 0
+let bannerAtual = 0;
+let modal   = document.querySelector('.modal');
 let elementoImagem = document.querySelector('.banner img');
 let banners = [
   'images/titulo1.jpg',
@@ -44,5 +45,40 @@ function trocarBanner() {
   elementoImagem.src = imagem;
 }
 
+
+function validaFormulario(){
+  var nome  = form1.nome.value;
+  var email = form1.email.value;
+  var mensagem = form1.mensagem.value;
+
+  if (nome == "") {
+    document.getElementById("textModal").innerHTML = 'Preencha o campo com seu nome';
+    form1.nome.focus();
+    toggleModal();
+  }else if (email == "") {
+    document.getElementById("textModal").innerHTML = 'Preencha o campo com seu email';
+    form1.email.focus();
+    toggleModal();
+  }else if (mensagem == "") {
+    document.getElementById("textModal").innerHTML = 'Preencha o campo mensagem';
+    form1.mensagem.focus();
+    toggleModal();
+  }else{
+    document.getElementById("textModal").innerHTML = 'Obrigada pela sua assinatura';
+    form1.nome.value = '';
+    form1.email.value = '';
+    form1.mensagem.value = '';
+    toggleModal();
+  }
+
+}
+
+function toggleModal(){
+  if (modal.style.display === "none" || modal.style.display === "") {
+       modal.style.display = "block";
+  } else {
+       modal.style.display = "none";
+  }
+}
 setInterval(trocarBanner, 2000);
 openSeason('tabSeason1', 'season1');
